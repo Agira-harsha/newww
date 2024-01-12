@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Document</title>
+    <style>
+        .div
+        {
+            width: 50%;
+            height: 500px;
+            background-color:  #666;;
+            margin-left: auto;
+            margin-top: 50px;
+            margin-right: auto;
+            box-shadow: 4px 3px 5px black;
+            
+        }
+       
+        .text
+        {
+            color:black;
+            font-weight: bolder;
+          
+           
+            
+        }
+        .input
+        {
+            width: 300px;
+            height: 26px;
+            margin-top: 10px;
+            border-radius: 10px;
+            border: 3px solid gainsboro;
+            
+            cursor: pointer;
+        }
+        .input:hover
+        {
+            border: 3px solid rgb(93, 93, 207) ;
+        }
+        .input:active
+        {
+            border: 3px solid red ;
+        }
+        h1{
+            text-align:center;
+            font-weight: bolder;
+            font-family:monospace;
+            color: white;
+            padding-top: 30px;
+            
+
+        }
+        button{
+            width: 150px;
+            margin-left: 250px;
+            margin-top: 30px;
+            border-radius: 10px;
+            height: 35px;
+            cursor: pointer;
+            box-shadow: 4px 3px 5px black;
+        }
+        button:hover{
+            border: 3px solid rgb(93, 93, 207) ;
+
+        }
+    </style>
+</head>
+<body style="background-color: #F3EEEA;">
+    <div class="div">
+        <h1 >Register</h1>
+        <form action="https://sheetdb.io/api/v1/esohh99mboofc" method="POST" id="sheetid">
+            <table style="margin-left: 100px; padding-top: 30px;">
+                    <tr>
+                        <td>
+                            <label for="name" class="text">Name:</label>
+                        </td>
+                        <td>
+                            <input type="text" name="data[name]" class="input">
+                        </td>
+                    </tr>
+                
+                <tr>
+                    <td>
+                        <label for="email" class="text">Email:</label>
+                    </td>
+                    <td>
+                        <input type="email" name="data[email]" class="input">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="Number" class="text">Number:</label>
+                    </td>
+                    <td>
+                        <input type="number" name="data[number]" class="input">
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>
+                        <label for="location" class="text">Password:</label>
+                    </td>
+                    <td>
+                        <input type="password" name="data[password]" class="input">
+                    </td>
+                </tr>
+            </table>
+            <button >Submit</button>
+        </form>
+        <script src="sheetApi.js"></script>
+       
+        
+
+    </div>
+</body>
+</html>
